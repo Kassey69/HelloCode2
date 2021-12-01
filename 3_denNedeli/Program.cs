@@ -14,9 +14,9 @@
 //}
 //Console.ReadKey();
 Console.WriteLine("Введите число от 1 до 7 ");
-string number = Console.ReadLine(); 
+string number = Console.ReadLine(); //компьютер запоминает введенное наше число
 int day = Convert.ToInt16(number);
-
+//int day = number;
 
 if (day == 1)
 {
