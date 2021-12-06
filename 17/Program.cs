@@ -1,12 +1,16 @@
 ﻿//17. По двум заданным числам проверять является ли одно квадратом другого
-int a = 2;
-int b = 4;
-int result = a * a;
-if (result == b) 
-{
-    Console.WriteLine("Число является квардатом" );
+Console.WriteLine("Введите 1 число:");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 2 число:");
+int b = Convert.ToInt32(Console.ReadLine());
+if (a / b == b) {
+    Console.WriteLine("Первое число является квардатом второго" );
 }
 else
-{
-   Console.WriteLine("Число не квадрат"); 
+   if (b / a == a){
+       Console.WriteLine("Второе число является квардатом первого" );
+   }
+   else {
+   Console.WriteLine("нет квадрата числа"); 
 }
+
